@@ -11,11 +11,13 @@ def square(x)
 end
 
 system('clear') #the system method runs any string you give it on the command line
-puts "Would you like to (D)ouble a number, (S)quare a number, or (Q)uit?"
-print"(D, S, or Q) > "
 
-response = gets.chomp.upcase
 loop do
+  puts "Would you like to (D)ouble a number, (S)quare a number, or (Q)uit?"
+  print"(D, S, or Q) > "
+
+  response = gets.chomp.upcase
+
   if response == "D"
     print "What number do you want to double? > "
     response_number = gets.chomp.to_i
